@@ -1,6 +1,6 @@
 <!-- 8.Получить все четырехзначные целые числа, в записи которых нет одинаковых цифр. -->
 <?php
-require_once "functions.php";
+
 function DoubleNumbers($N)
 {
     if ($N > 9) {
@@ -18,10 +18,8 @@ function DoubleNumbers($N)
     }
 }
 
-
-for ($i=1000; $i < 10000; $i++) { 
-    if(!DoubleNumbers($i))
-    {
+for ($i = 1000; $i < 10000; $i++) {
+    if (!DoubleNumbers($i)) {
         echo $i;
     }
 }
