@@ -22,13 +22,12 @@ function isPrime($number)
 $k = 1;
 $count = 0;
 while ($count != 10) {
-    if(isPrime($k) && isPrime($k+2))
-    {
-        echo($k) . "  ";
-        echo($k+2);
+    if (isPrime($k) && isPrime($k + 2)) {
+        echo ($k) . "  ";
+        echo ($k + 2);
         echo "<pre>";
         $count++;
     }
-    $k+=2;
+    $k += 2;
 }
 ?>
