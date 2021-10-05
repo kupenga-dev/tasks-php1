@@ -1,9 +1,8 @@
 <!-- 29.Для  каждого  числа  заданной  последовательности  натуральных   чисел   n0 ,n1,...,nm установить,  можно  ли  вычеркнуть  в  нем  некоторые  цифры, чтобы сумма оставшихся равнялась
 заданному числу к.   -->
 <?php
-// ini_set('max_execution_time', '100');
-require_once "functions.php";
-function Sum($number, $k)
+
+function Analysis($number, $k)
 {
     $sum = 0;
     $secondNumber = $number;
@@ -53,7 +52,7 @@ $n = 100;
 $m = 1500;
 
 for ($i = $n; $i < $m; $i++) {
-    if (Sum($i, $k)) {
+    if (Analysis($i, $k)) {
         echo $i . "  Можно";
         echo "<pre>";
     } else {
